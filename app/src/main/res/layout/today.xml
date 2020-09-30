@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <org.eazegraph.lib.charts.PieChart xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="8dp"
+        app:egDrawValueInPie="true"
+        app:egInnerValueUnit="seconds"
+        app:egShowDecimal="false"
+        app:egUseCustomInnerValue="false"
+        app:egUsePieRotation="true" />
+
+    <ListView
+        android:id="@+id/TodayList"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/piechart"
+        android:layout_weight="0.99">
+
+    </ListView>
+
+
+</RelativeLayout>
